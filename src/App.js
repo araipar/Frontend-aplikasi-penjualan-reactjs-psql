@@ -1,17 +1,20 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import UserList from "./components/UserList";
 import AddUser from "./components/AddUser";
+import Login from "./components/Login";
 import EditUser from "./components/EditUser";
-import TimelineList from "./components/TimelineList";
+import ReportList from "./components/ReportList";
+import ProductList from "./components/ProductList";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<UserList/>}/>
+        <Route path="/" element={<ProductList/>}/>
         <Route path="add" element={<AddUser/>}/>
+        <Route path="Login" element={<Login/>}/>
         <Route path="edit/:id" element={<EditUser/>}/>
-        <Route path="timeline" element={<TimelineList/>}/>
+        <Route path="report" element={<ReportList/>}/>
       </Routes>
     </BrowserRouter>
   );

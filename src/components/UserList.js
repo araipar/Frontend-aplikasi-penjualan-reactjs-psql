@@ -30,10 +30,10 @@ const UserList = () => {
           Add New
         </Link>
         &nbsp;
-        <Link to={`timeline`} className="button is-success">
-          Timeline
+        <Link to={`report`} className="button is-success">
+          Report
         </Link>
-        
+
         <table className="table is-striped is-fullwidth">
           <thead>
             <tr>
